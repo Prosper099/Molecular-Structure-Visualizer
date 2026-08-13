@@ -1,0 +1,6 @@
+{
+  "name": "Atomic and Molecular Structure Visualizer",
+  "description": "An interactive 3D visualizer that simulates atoms and molecules with adjustable electron mass, subatomic speeds, and real-time physical reactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
