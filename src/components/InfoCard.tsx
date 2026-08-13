@@ -97,7 +97,7 @@ export default function InfoCard({
           <div className={`border rounded-lg p-2.5 text-center font-mono select-all shadow-3xs ${
             isDark ? 'bg-slate-950 border-slate-800 text-slate-300' : 'bg-white/80 border-blue-50 text-slate-700'
           }`}>
-            <div className={`text-xs font-bold md:text-sm ${isDark ? 'text-indigo-3 00 text-indigo-300' : 'text-blue-808 text-blue-800'}`}>
+            <div className={`text-xs font-bold md:text-sm ${isDark ? 'text-indigo-300' : 'text-blue-800'}`}>
               a₀ = <span className="underline">ℏ²</span> = <span className="underline">52.92 pm</span>
               <br className="sm:hidden" />
               <span className="mx-2">÷</span> (<span className={isDark ? 'text-indigo-400 font-bold' : 'text-blue-600 font-bold'}>{params.electronMass.toFixed(2)}mₑ</span> · e²)

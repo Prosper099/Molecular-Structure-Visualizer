@@ -137,7 +137,7 @@ export default function App() {
           <h1 className={`text-3xl font-light tracking-tight transition-colors ${isDark ? 'text-slate-100' : 'text-slate-800'}`}>
             {activeTab === 'periodic' ? (
               <>
-                Periodic <span className={`${isDark ? 'text-indigo-400' : 'text-blue-505 text-blue-550'} font-serif italic`}>Table Registry</span>
+                Periodic <span className={`${isDark ? 'text-indigo-400' : 'text-blue-600'} font-serif italic`}>Table Registry</span>
               </>
             ) : activeTab === 'collision' ? (
               <>
@@ -329,9 +329,9 @@ export default function App() {
                           className={`p-2 rounded-xl text-xs font-bold font-mono border text-center transition-all cursor-pointer ${
                             collisionElementA === item.symbol
                               ? isDark
-                                ? 'bg-indigo-950/40 border-indigo-505 border-indigo-500 text-indigo-300 ring-2 ring-indigo-900/45'
+                                ? 'bg-indigo-950/40 border-indigo-500 text-indigo-300 ring-2 ring-indigo-900/40'
                                 : 'bg-blue-50 border-blue-500 text-blue-700 ring-2 ring-blue-50'
-                              : isDark ? 'bg-slate-950 border-slate-800 text-slate-400 hover:border-slate-705 text-slate-400 hover:text-slate-200' : 'bg-white border-slate-100 text-slate-600 hover:border-slate-300'
+                              : isDark ? 'bg-slate-950 border-slate-800 text-slate-400 hover:border-slate-700 hover:text-slate-200' : 'bg-white border-slate-100 text-slate-600 hover:border-slate-300'
                           }`}
                         >
                           {item.symbol}
@@ -366,9 +366,9 @@ export default function App() {
                           className={`p-2 rounded-xl text-xs font-bold font-mono border text-center transition-all cursor-pointer ${
                             collisionElementB === item.symbol
                               ? isDark
-                                ? 'bg-emerald-950/40 border-emerald-505 border-emerald-500 text-emerald-300 ring-2 ring-emerald-900/45'
+                                ? 'bg-emerald-950/40 border-emerald-500 text-emerald-300 ring-2 ring-emerald-900/40'
                                 : 'bg-emerald-50 border-emerald-500 text-emerald-700 ring-2 ring-emerald-50'
-                              : isDark ? 'bg-slate-950 border-slate-800 text-slate-400 hover:border-slate-705 text-slate-400 hover:text-slate-200' : 'bg-white border-slate-100 text-slate-600 hover:border-slate-300'
+                              : isDark ? 'bg-slate-950 border-slate-800 text-slate-400 hover:border-slate-700 hover:text-slate-200' : 'bg-white border-slate-100 text-slate-600 hover:border-slate-300'
                           }`}
                         >
                           {item.symbol}
@@ -533,10 +533,10 @@ export default function App() {
                 exit={{ opacity: 0, y: -10 }}
                 id="reaction-alert"
                 className={`p-3.5 border rounded-xl flex items-center gap-2.5 text-xs font-medium shadow-3xs ${
-                  isDark ? 'bg-indigo-950/30 border-indigo-900/40 text-indigo-300' : 'bg-blue-50/60 border-blue-105 text-blue-700'
+                  isDark ? 'bg-indigo-950/30 border-indigo-900/40 text-indigo-300' : 'bg-blue-50/60 border-blue-100 text-blue-700'
                 }`}
               >
-                <Compass className={`w-4 h-4 shrink-0 ${isDark ? 'text-indigo-400' : 'text-blue-505 text-blue-500'}`} />
+                <Compass className={`w-4 h-4 shrink-0 ${isDark ? 'text-indigo-400' : 'text-blue-500'}`} />
                 <span>
                   <strong>Relativity Shift Detected:</strong> You have adjusted the Electron Mass to <span className="underline">{params.electronMass.toFixed(2)}x</span>. The Bohr radius and angular momentum are dynamically adapting. Orbits have {params.electronMass > 1.0 ? 'compressed' : 'expanded'} in real-time.
                 </span>
@@ -583,7 +583,7 @@ export default function App() {
                       </span>
                     </div>
                     <span className={`text-[10px] font-mono border px-2 py-0.5 rounded ${
-                      isDark ? 'text-slate-400 bg-slate-950 border-slate-805 border-slate-800' : 'text-slate-400 bg-slate-50 border-slate-100'
+                      isDark ? 'text-slate-400 bg-slate-950 border-slate-800' : 'text-slate-400 bg-slate-50 border-slate-100'
                     }`}>
                       FPS: 60/60 · Buffer: OK
                     </span>
